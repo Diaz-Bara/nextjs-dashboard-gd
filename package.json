@@ -2,10 +2,10 @@
   "private": true,
   "packageManager": "pnpm@9.15.0",
   "engines": {
-    "node": ">=20.18.0"
+    "node": ">=20.18.0 <23.0.0"
   },
   "scripts": {
-    "build": "next build",
+    "build": "next build --no-turbo",
     "dev": "next dev --turbopack",
     "start": "next start"
   },
@@ -31,7 +31,7 @@
     "@types/node": "22.10.7",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
-    "baseline-browser-mapping": "^2.10.19"
+    "baseline-browser-mapping": "latest"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
